@@ -23,7 +23,7 @@
 	* LinkedHashMap有两种访问顺序：1. 按照插入顺序。2. 按照上次访问的顺序，即每次访问完一个就键值对后，将该元素移植LinkedHashMap的结尾，可用于实现**LRU（Least Recently Used**）。
 
 ## HashSet & HashMap
-	* HashSet**底层基于HashMap实现。**
+	* HashSet底层基于HashMap实现。
 	* 添加的元素作为key存入Entry
 
 ## HashSet & LinkedHashSet

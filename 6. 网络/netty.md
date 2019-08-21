@@ -1,4 +1,4 @@
-# netty
+# Netty
 #6. 网络/RPC#
 [Netty - 简书](https://www.jianshu.com/p/b44f98b90077)
 - [ ] 待完善
@@ -8,8 +8,8 @@ Netty 是一个::基于NIO的客户、服务器端编程框架::，使用Netty �
 - - - -
 ## 架构
 Netty 采用了比较典型的三层网络架构进行设计，逻辑架构图如下所示：
-![](netty/(null))![](netty/(null))
-![](netty/F956B150-7ADA-4854-BD8A-B39775D89E23.png)
+![](Netty/(null))![](Netty/(null))
+![](Netty/F956B150-7ADA-4854-BD8A-B39775D89E23.png)
 
 * 第一层，::Reactor 通信调度层::，它由一系列辅助类完成，包括 Reactor 线程 NioEventLoop 以及其父类、NioSocketChannel/NioServerSocketChannel 以及其父 类、ByteBuffer 以及由其衍生出来的各种 Buffer、**Unsafe以及其衍生出的各种内部类**等。该层的主要职责就是::监听网络的读写和连接操作::，负责将网络层的数据 读取到内存缓冲区中，然后触发各种网络事件，例如连接创建、连接激活、读事 件、写事件等等，将这些事件触发到 PipeLine 中，由 PipeLine 充当的职责链来 进行后续的处理。
 * 第二层，::职责链PipeLine::，它::负责事件在职责链中的有序传播，同时负责动态的编排职责链::，职责链可以选择监听和处理自己关心的事件，它可以拦截处理和向 后/向前传播事件，不同的应用的 Handler 节点的功能也不同，通常情况下，往往 会开发编解码 Hanlder 用于消息的编解码，它可以将外部的协议消息转换成内部 的 POJO 对象，这样上层业务侧只需要关心处理业务逻辑即可，不需要感知底层 的协议差异和线程模型差异，实现了架构层面的分层隔离。

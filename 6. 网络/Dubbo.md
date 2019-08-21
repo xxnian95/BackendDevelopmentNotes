@@ -1,8 +1,7 @@
 # Dubbo
 #6. 网络/RPC#
 [Dubbo - 简书](https://www.jianshu.com/p/3090d63e9cb3)
-- [ ] 待完善
-
+- - - -
 Dubbo是阿里巴巴开源的基于 Java 的::高性能 RPC（远程调用） 分布式服务框架（SOA::），致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。
 内部使用了Netty和Zookeeper，保证了高性能高可用性。
 
@@ -31,6 +30,9 @@ Dubbo是阿里巴巴开源的基于 Java 的::高性能 RPC（远程调用） �
 	2. roundrobin loadbalance：轮寻，按照公约后权重设置轮训比例；
 	3. lastactive loadbalance：最少活跃调用数，若相同则随机；
 	4. consistenthash loadbalance：一致性hash，相同参数的请求总是发送到同一提供者。
+
+## 流程
+![](Dubbo/12956417-f031b9e95a1b6340.png)
 
 
 

@@ -13,5 +13,5 @@ Java 对象存储在内存中，分别分为三个部分，即*对象头、实�
 当一个线程需要获取 Object 的锁时，会被放入 ::EntrySet:: 中进行等待，如果该线程获取到了锁，成为当前锁的 owner。如果根据程序逻辑，一个已经获得了锁的线程缺少某些外部条件，而无法继续进行下去（例如生产者发现队列已满或者消费者发现队列为空），那么该线程可以通过调用 wait 方法将锁释放，进入 wait set 中阻塞进行等待，其它线程在这个时候有机会获得锁，去干其它的事情，从而使得之前不成立的外部条件成立，这样先前被阻塞的线程就可以重新进入 EntrySet 去竞争锁。这个外部条件在 monitor 机制中称为::条件变量::。
 ### 竞争
 1. 要进入一个 synchronized 方法修饰的方法或者代码块，会先获取与 synchronized 关键字绑定在一起的 Object 的对象锁，这个锁也限定了其它线程无法进入与这个锁相关的其它 synchronized 代码区域。
-	2. 如果已经有线程成为了synchronized绑定对象Object的owner，那么会在Entry Set当中等待，直到owner释放了Object的锁。
+2. 如果已经有线程成为了synchronized绑定对象Object的owner，那么会在Entry Set当中等待，直到owner释放了Object的锁。
 

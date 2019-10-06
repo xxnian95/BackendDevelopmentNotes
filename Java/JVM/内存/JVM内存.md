@@ -8,6 +8,9 @@
 		* 字符在永久代中容易溢出
 		* 永久代的GC效率低
 只有*堆和方法区*会进行GC。
+![][image-1]
 ![]()
-![]()
+![][image-3]
 
+[image-1]:	https://raw.githubusercontent.com/zhangpengnian/ImageRepository/master/img/20191005120341.png
+[image-3]:	https://raw.githubusercontent.com/zhangpengnian/ImageRepository/master/img/20191005120357.png

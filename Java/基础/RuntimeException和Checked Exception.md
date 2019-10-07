@@ -6,4 +6,4 @@
 ## RuntimeException
 我们可以不处理。 当出现这样的异常时， 总是由虚拟机接管。 比如： 我们从来没有人去处理过 NullPointerException 异常， 它就是运行时异常， 并且这种异常还是最常见的异常之一。
 
-被检查的异常应该用 try-catch 块代码处理或用 throws 关键字抛出，不受检查的异常在程序中不要求被处理或用 throws 抛出；Exception 是所有被检查异常的基类，而 RuntimeException（是 Exception 的子类） 是所有不受检查异常的基类；被检查的异常适用于那些不是因程序引起的错误情况（如 *FileNotFoundException*），而不被检查的异常通常都是由于糟糕的编程引起（如 *NullPointerException*）。
+被检查的异常应该用 try-catch 块代码处理或用 throws 关键字抛出，不受检查的异常在程序中不要求被处理或用 throws 抛出；Exception 是所有被检查异常的基类，而 RuntimeException（是 Exception 的子类） 是所有不受检查异常的基类；被检查的异常适用于那些不是因程序引起的错误情况（如`FileNotFoundException`），而不被检查的异常通常都是由于糟糕的编程引起（如`NullPointerException`）。

@@ -1,6 +1,6 @@
 # Dubbo
 
-Dubbo是阿里巴巴开源的基于 Java 的::高性能 RPC（远程调用） 分布式服务框架（SOA::），致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。
+Dubbo是阿里巴巴开源的基于 Java 的**高性能 RPC（远程调用） 分布式服务框架（SOA**），致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。
 内部使用了Netty和Zookeeper，保证了高性能高可用性。
 
 ## 为什么要使用Dubbo
@@ -9,8 +9,8 @@ Dubbo是阿里巴巴开源的基于 Java 的::高性能 RPC（远程调用） �
 3. 分布式架构可以承受更大规模的并发流量。
 
 ## 对比Spring Cloud
-1. ::通信方式::不同：Dubbo 使用的是 RPC 通信，而Spring Cloud 使用的是*HTTP RESTFul*方式。
-2. ::组成::不一样： dubbo的服务注册中心为Zookeerper，服务监控中心为dubbo-monitor,无消息总线，服务跟踪、批量任务等组件； spring-cloud的服务注册中心为spring-cloud netflix enruka，服务监控中心为spring-boot admin,有消息总线，数据流、服务跟踪、批量任务等组件。
+1. **通信方式**不同：Dubbo 使用的是 RPC 通信，而Spring Cloud 使用的是*HTTP RESTFul*方式。
+2. **组成**不一样： dubbo的服务注册中心为Zookeerper，服务监控中心为dubbo-monitor,无消息总线，服务跟踪、批量任务等组件； spring-cloud的服务注册中心为spring-cloud netflix enruka，服务监控中心为spring-boot admin,有消息总线，数据流、服务跟踪、批量任务等组件。
 
 ## 内置服务容器
 1. Spring Container
@@ -30,8 +30,10 @@ Dubbo是阿里巴巴开源的基于 Java 的::高性能 RPC（远程调用） �
 4. consistenthash loadbalance：一致性hash，相同参数的请求总是发送到同一提供者。
 
 ## 流程
-![]()
+
+![][image-1]
 
 
 
 
+[image-1]:	https://raw.githubusercontent.com/zhangpengnian/ImageRepository/master/img/20191011183338.png

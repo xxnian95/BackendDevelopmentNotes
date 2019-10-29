@@ -1,6 +1,6 @@
 # Collection
 
-![]()
+![][image-1]
 
 ## Set
 * *TreeSet*：基于红黑树实现，支持有序性操作，例如根据一个范围查找元素的操作。但是查找效率不如 HashSet， _HashSet 查找的时间复杂度为 O(1)，TreeSet 则为 O(logN)_ 。 
@@ -16,3 +16,4 @@
 * *LinkedList*：可以用它来实现双向队列。 
 * *PriorityQueue*：基于堆结构实现，可以用它来实现优先队列。
 
+[image-1]:	https://raw.githubusercontent.com/zhangpengnian/ImageRepository/master/img/20191025083058.png

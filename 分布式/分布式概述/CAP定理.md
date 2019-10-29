@@ -14,6 +14,7 @@ CAP理论的**核心**是：一个分布式系统不可能同时很好的满足�
 **分区容忍性必不可少**，因为总是假设网络不可靠。
 - 为了保证**一致性（CP）**，**不能访问未同步完成的节点**，也就失去了部分可用性； 
 - 为了保证**可用性（AP）**，**允许读取所有节点的数据**，但是数据可能不一致。
+- 
 ![][image-1]
 
 [image-1]:	https://raw.githubusercontent.com/pengnian95/ImageRepository/master/img/20191005010223.png?token=AJFPGG6S3QGVDE4HYDYDEFS5S55XC
